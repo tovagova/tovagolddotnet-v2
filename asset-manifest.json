@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tovagolddotnet-v2/static/css/main.073c9b0a.css",
-    "main.js": "/tovagolddotnet-v2/static/js/main.b82bf606.js",
+    "main.js": "/tovagolddotnet-v2/static/js/main.9b0497ad.js",
     "static/js/787.222f8364.chunk.js": "/tovagolddotnet-v2/static/js/787.222f8364.chunk.js",
     "static/media/logo.svg": "/tovagolddotnet-v2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tovagolddotnet-v2/index.html",
     "main.073c9b0a.css.map": "/tovagolddotnet-v2/static/css/main.073c9b0a.css.map",
-    "main.b82bf606.js.map": "/tovagolddotnet-v2/static/js/main.b82bf606.js.map",
+    "main.9b0497ad.js.map": "/tovagolddotnet-v2/static/js/main.9b0497ad.js.map",
     "787.222f8364.chunk.js.map": "/tovagolddotnet-v2/static/js/787.222f8364.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b82bf606.js"
+    "static/js/main.9b0497ad.js"
   ]
 }
