@@ -1,7 +1,7 @@
 {
   "name": "site-v2",
   "version": "0.1.0",
-  "homepage": "https://tovagova.github.io/tovagolddotnet-v2",
+  "homepage": "www.tovagold.net",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

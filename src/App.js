@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 import "./stylesheet.css";
 import Home from "./component/home";
@@ -20,7 +21,7 @@ class App extends Component {
                 <li>
                   <p className="hover-underline-anim">
                     <a>
-                      <Link to="/">HOME</Link>
+                      <Link to="/home">HOME</Link>
                     </a>
                   </p>
                 </li>
@@ -36,7 +37,8 @@ class App extends Component {
           </section>
         </section>
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/" element={<Navigate to="/Home" />}></Route>
+          <Route exact path="/home" element={<Home />}></Route>
           <Route exact path="/casestudies" element={<CaseStudies />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
