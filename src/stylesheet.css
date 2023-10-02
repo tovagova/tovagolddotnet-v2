@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../src/fonts/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url("../src/fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url("../src/fonts/Oxygen-Regular.ttf");
+}
+
+.topbar {
+  background-color: black;
+  height: 120px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 40px;
+}
+
+.topbar h1 {
+  color: white;
+  font-size: 45px;
+  font-family: Pacifico;
+}
+
+.navbar {
+  justify-content: space-evenly;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.navbar a {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  font-family: Rubik;
+  text-decoration: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.hover-underline-anim {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.hover-underline-anim::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(231, 72, 98);
+    transform-origin: 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-anim:hover::after {
+    transform: scaleX(.9);
+    transform-origin: 50%;
+}
+
+.hero {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#welcome p {
+  font-size: 40px;
+  font-family: Oxygen;
+}
+
+.hero img {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.contact p {
+  font-family: Oxygen;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact a:link {
+  color: rgb(231, 72, 98);
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media (max-width: 800px) {
+  .skillsContainer {
+      display: grid;
+  }
+}
+
+.skillCard {
+  padding: 40px;
+}
+
+.skillCard img {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.skillCard h2 {
+  font-family: Oxygen;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.skillCard li {
+  font-family: Oxygen;
+  font-size: 20px;
+}
+
+.case-wrapper {
+  display: grid;
+  justify-items: center;
+  width: 50%;
+  margin: auto;
+  gap: 20px;
+}
+
+.case-card {
+  display: grid;
+  background-color: #c1afe4;
+  justify-items: center;
+  grid-template-areas:
+  "a b"
+  "a c"
+  "a d";
+  grid-template-rows: 15% 15% auto;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.case-card a {
+  grid-area: a;
+}
+
+.case-card h1 {
+  grid-area: b;
+  font-size: 30px;
+}
+
+.case-card h2 {
+  grid-area: c;
+  font-size: 18px;
+}
+
+.case-card p {
+  font-family: Oxygen;
+  grid-area: d;
+  padding-left: 15px;
+
+}
+
+.case-card img {
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-title h1 {
+  font-family: Oxygen;
+  font-size: 60px;
+  padding: 20px;
+}
+
+.project-title h2 {
+  font-family: Oxygen;
+  font-size: 20px;
+}
+
+.project-title img {
+  width: 500px;
+  height: 700px;
+  object-fit: none;
+  object-position: 40%;
+  padding-top: 10px;
+  border-radius: 15px;
+}
+
+.project-subtitle {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+}
+
+.project-subtitle p {
+  font-family: Oxygen;
+  font-size: 20px;
+}
+
+.project-chapter-title {
+  text-align: center;
+  background: black;
+  width: 60%;
+  margin: auto;
+  border-radius: 40px;
+}
+
+.project-chapter-title h1 {
+  font-family: Rubik;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+}
+
+.project-text p {
+  font-family: Oxygen;
+}
+
+.project-text {
+  width: 60%;
+  margin: auto;
+}
+
+.img-single {
+  display: block;
+  margin: auto;
+}
+
+.project-text li {
+  font-family: Oxygen;
+}
+
+.project-text ul {
+  margin-left: 5%;
+}
+
+.project-img-container-2 {
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  grid-template-columns: auto auto;
+  margin: auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-img-container-3 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 30px;
+  margin: auto;
+  text-align: center;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+  align-items: center;
+}
+
+.project-img-container-3 p {
+  font-family: Oxygen;
+}
+
+.img-subtitle {
+  text-align: center;
+  padding: 10px;
+  background-color: #3C9CAA;
+  width: 50%;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.img-subtitle p {
+  font-family: Oxygen;
+  color: white;
+}
+
+.problem-statement {
+  text-align: center;
+  background-color: #3C9CAA;
+  width: 40%;
+  margin: auto;
+  border-radius: 40px;
+  padding: 25px;
+}
+
+.problem-statement p {
+  font-family: Oxygen;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
